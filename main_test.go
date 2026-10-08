@@ -108,7 +108,7 @@ func TestCafeSearch(t *testing.T) {
 		respStr := strings.TrimSpace(response.Body.String())
 		result := strings.Split(respStr, ",")
 
-		count := len(respStr)
+		count := len(result)
 		if respStr == "" {
 			count = 0
 		}
